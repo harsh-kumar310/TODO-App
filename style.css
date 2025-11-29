@@ -1,0 +1,157 @@
+/* General Body Styles */
+body {
+    background-color: #e0f7fa;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Main Heading */
+.head {
+    text-align: center;
+    color: black;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Input Area */
+.input {
+    text-align: center;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.input input {
+    font-size: 1.1rem;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+.input .task-input {
+    width: 35%;
+}
+
+.input button {
+    font-size: 1.1rem;
+    padding: 11px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Week Filter Styles */
+.week-filter {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.day-btn {
+    padding: 8px 15px;
+    font-size: 1rem;
+    border: 1px solid #007bff;
+    background-color: white;
+    color: #007bff;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.day-btn:hover {
+    background-color: #e0f7fa;
+}
+
+.day-btn.active {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Task Container Box */
+.task-container {
+    width: 60%;
+    max-width: 600px;
+    margin: 30px auto 0;
+    background-color: white;
+    padding: 15px 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.head3 {
+    text-align: left;
+    margin: 0 0 15px 0;
+    color: #333;
+}
+
+/* Ordered Task List */
+.order li {
+    font-size: 1.3rem;
+    padding: 10px 5px;
+    margin-bottom: 8px;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+    list-style: none; /* remove default numbering */
+}
+
+.order li .task-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.order li .task-time {
+    font-size: 0.9rem;
+    color: #666;
+    background-color: #f0f0f0;
+    padding: 3px 8px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+/* Style for a completed task */
+.completed .task-text {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.delete {
+    color: white;
+    background-color: #e53935;
+    border-radius: 5px;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.edit {
+    color: white;
+    background-color: #2196F3; /* Blue color for Edit */
+    border-radius: 5px;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-right: 5px; /* Thoda sa gap delete button se */
+}
+
+.edit:hover {
+    background-color: #1769aa;
+}
+
+.day-btn.marked-day {
+    background-color: #e53935; /* Red color */
+    color: white;
+    border-color: #c62828;
+}
+
+/* Add a right arrow before the marked day's text */
+.day-btn.marked-day::before {
+    content: '→'; /* Right arrow symbol */
+    margin-right: 6px;
+    font-weight: bold;
+}
